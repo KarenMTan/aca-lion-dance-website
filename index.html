@@ -12,7 +12,7 @@
 	<nav>
 		<ul id="banner">
 			<li class="menu-item">
-				<div class="hamburger" onmouseover="displayDropdownContent()" onmouseleave="hideDropdownContent()">
+				<div class="hamburger" onclick="displayDropdownContent()">
   					<div class="bar1"></div>
  					<div class="bar2"></div>
  					<div class="bar3"></div>
@@ -100,11 +100,15 @@
 	
 <script>
 function displayDropdownContent() {
-  	document.getElementById("dropdown-content").style.display = "flex"; 
-}
-
-function hideDropdownContent() {
-	document.getElementById("dropdown-content").style.display = "none"; 
+	var x = document.getElementById("dropdown-content")
+	if(x.style.display === "none") 
+	{
+		x.style.display = "block"; 
+	} 
+	else 
+	{
+		x.style.display = "none"; 
+	}
 }
 
 </script>
