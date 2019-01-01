@@ -4,13 +4,6 @@ body {
 	margin: 0;
 }
 
-ul {
-	list-style-type: none;
-	color: #ffffff;
-	text-decoration: none;
-	font-size: 20px;
-}
-
 .logo {
 	height: 100px; 
 	margin-top: -10px; 
@@ -26,6 +19,7 @@ ul {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	z-index: -2;
 	margin: 0;
 	padding: 0;
 	background-color: rgba(255, 255, 255, 0.05);
@@ -35,6 +29,7 @@ ul {
 .hamburger {
   display: inline-block;
   cursor: pointer;
+  z-index: 5;
 }
 
 .bar1, .bar2, .bar3 {
@@ -45,36 +40,41 @@ ul {
   transition: 0.4s;
 }
 
-#dropdown-content {
-	display: none;
+#dropdown-content, .menu {
 	flex-direction: column;
- 	position: absolute;
- 	z-index: 1;
- 	background-color: #000000;
+	list-style-type: none;
+	overflow-x: hidden;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 20px;
 }
 
-#dropdown-content a {
+#dropdown-content {
+	display: none;
+ 	position: absolute;
+ 	height: auto;
+ 	width: 12%;
+ 	z-index: 2;
+ 	overflow-x: hidden;
+}
+
+.menu {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 15px;
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+}
+
+#dropdown-content a, .menu a {
 	padding: 6px 8px 6px 16px;
 	display: block;
 	color: #ffffff;
 	text-decoration: none;
-	height: auto;
-	width: 145px;
 	text-align: left;
 	font-size: 18px;
-}
-
-.menu {
-	display: flex;
-	flex-direction: column;
-	list-style-type: none;
-	height: auto;
-	width: 155px;
-	
-	z-index: -1;
-	overflow-x: hidden;
-	padding: 8px 0;
-	background-color: rgba(255, 255, 255, 0.2);
 }
 
 .menu a:hover {
@@ -83,36 +83,11 @@ ul {
 
 section {
 	display: flex;
-	justify-content: space-around;
-}
-
-aside, article {
-	padding: 15px;
+	justify-content: space-between;
 }
 
 aside {
 	width: 15%;
-	border-style: 1px solid;
-}
-
-aside ul {
-	position: -webkit-sticky;
-	position: sticky;
-	z-index: -1;
-	top: 15px;
-}
-
-aside ul li {
-	padding: 3px;
-}
-
-aside ul li a {
-	padding: 6px 8px 6px 16px;
-	display: block;
-	color: #ffffff;
-	text-decoration: none;
-	font-size: 18px;
-	text-align: left;
 }
 
 article {
