@@ -1,0 +1,135 @@
+body {
+	background: linear-gradient(120deg, #ff1919 0, #ffffff 100%) right bottom no-repeat;
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.logo {
+	height: 100px; 
+	margin-top: -10px; 
+	padding: 16px;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+#banner {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(255, 255, 255, 0.05);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+#dropdown-content {
+	display: none;
+	flex-direction: column;
+ 	position: absolute;
+ 	z-index: 1;
+ 	background-color: #000000;
+}
+
+#dropdown-content a {
+	padding: 6px 8px 6px 16px;
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	height: auto;
+	width: 145px;
+	text-align: left;
+	font-size: 18px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	height: auto;
+	width: 155px;
+	
+	z-index: -1;
+	overflow-x: hidden;
+	padding: 8px 0;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menu a:hover {
+	opacity: 0.75;
+}
+
+section {
+	display: flex;
+	justify-content: space-around;
+}
+
+aside, article {
+	padding: 15px;
+}
+
+aside {
+	width: 15%;
+	border-style: 1px solid;
+}
+
+aside ul {
+	position: -webkit-sticky;
+	position: sticky;
+	z-index: -1;
+	top: 15px;
+}
+
+aside ul li {
+	padding: 3px;
+}
+
+aside ul li a {
+	padding: 6px 8px 6px 16px;
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 18px;
+	text-align: left;
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+article div {
+	margin-left: 100px;
+	margin-right: 200px;
+}
+
+@media (max-width: 700px) {
+	nav ul {
+		flex-direction: column;
+		padding: 16px;
+	}
+}
