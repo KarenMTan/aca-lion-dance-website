@@ -102,6 +102,12 @@ article div {
 	margin-right: 150px;
 }
 
+.event {
+	list-style-type: none;
+	text-align: center;
+	line-height: 28px;
+}
+
 footer {
 	display: flex;
 	flex-direction: row;
@@ -120,6 +126,21 @@ footer ul {
 	list-style-type: none;
 }
 
+#followUs {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#fbLogo, #instaLogo, #ytLogo {
+	height: 30px;
+	padding: 0 10px;
+}
+
+#ytLogo {
+	height: 31px;
+}
+
 @media (max-width: 700px) {
 	nav ul {
 		flex-direction: column;
@@ -130,4 +151,8 @@ footer ul {
 	margin-left: 25px;
 	margin-right: 50px;
 	}	
+
+	#ytLogo {
+	padding: 10px;
+}
 }
