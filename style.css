@@ -99,7 +99,7 @@ article {
 
 article div {
 	margin-left: 100px;
-	margin-right: 200px;
+	margin-right: 150px;
 }
 
 footer {
@@ -125,4 +125,9 @@ footer ul {
 		flex-direction: column;
 		padding: 16px;
 	}
+
+	article div {
+	margin-left: 25px;
+	margin-right: 50px;
+	}	
 }
