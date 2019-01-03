@@ -40,7 +40,7 @@ body {
   transition: 0.4s;
 }
 
-#dropdown-content, .menu {
+#dropdown-content,#menu {
 	flex-direction: column;
 	list-style-type: none;
 	overflow-x: hidden;
@@ -59,7 +59,7 @@ body {
  	overflow-x: hidden;
 }
 
-.menu {
+#menu {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 15px;
@@ -68,7 +68,7 @@ body {
 	z-index: 1;
 }
 
-#dropdown-content a, .menu a {
+#dropdown-content a, #menu a {
 	padding: 6px 8px 6px 16px;
 	display: block;
 	color: #ffffff;
@@ -77,7 +77,7 @@ body {
 	font-size: 18px;
 }
 
-.menu a:hover {
+#menu a:hover {
 	opacity: 0.75;
 }
 

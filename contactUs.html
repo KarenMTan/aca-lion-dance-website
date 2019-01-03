@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="http://www.uclaliondance.com/images/logoTransparent.png">
 </head>
 <body>
 
@@ -49,7 +50,7 @@
 <section>
 <!-- side bar -->
 	<aside> 
-		<ul class="menu">
+		<ul id="menu">
 			<li><a href="#performanceRequest">Performance Request</a></li>
 			<li><a href="#inquiry">Inquiry</a></li>
 		</ul>
@@ -147,13 +148,16 @@
 <script>
 function displayDropdownContent() {
 	var x = document.getElementById("dropdown-content")
+	var y = document.getElementById("menu")
 	if(x.style.display === "none") 
 	{
 		x.style.display = "flex"; 
+		y.style.display = "none";
 	} 
 	else 
 	{
 		x.style.display = "none"; 
+		y.style.display = "flex";
 	}
 }
 
