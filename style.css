@@ -1,6 +1,6 @@
 body {
 	background: linear-gradient(120deg, #ff1919 0, #ffffff 100%) right bottom no-repeat;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 }
 
@@ -100,6 +100,11 @@ article {
 article div {
 	margin-left: 100px;
 	margin-right: 150px;
+}
+
+embed {
+	width: 100%;
+	height: auto;
 }
 
 .event {
